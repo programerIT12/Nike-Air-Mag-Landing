@@ -1,0 +1,122 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media (width > 576px) {
+  .air-mag {
+    padding-bottom: 93px;
+  }
+
+  .air-mag__title-md {
+    margin-bottom: 10px;
+  }
+}
+@media (width <= 576px) {
+  .air-mag {
+    padding-bottom: 80px;
+  }
+  .air-mag__title-md {
+    margin-bottom: 13px;
+  }
+}
+.air-mag__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+
+.air-mag__description::before {
+  content: "";
+  display: block;
+  background-image: url("../../img/decor__accente.svg");
+  width: 131px;
+  height: 40px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transform: translateX(-13px);
+  -ms-transform: translateX(-13px);
+  transform: translateX(-13px);
+}
+.air-mag__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.air-mag__img {
+  width: 100%;
+}
+@media (width > 768px) {
+  .air-mag__info-wrapper {
+    gap: 40px;
+  }
+}
+@media (width <= 992px) {
+  .air-mag__info-wrapper {
+    gap: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (width > 768px) {
+  .air-mag__description {
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 992px) {
+  .air-mag__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+.air-mag__list-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (width > 992px) {
+  .air-mag__list-info {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transform: translateY(71px);
+    -ms-transform: translateY(71px);
+    transform: translateY(71px);
+    gap: 40px;
+    max-width: 293px;
+  }
+}
+@media (width <= 992px) {
+  .air-mag__list-info {
+    -webkit-transform: translateY(71px);
+    -ms-transform: translateY(71px);
+    transform: translateY(71px);
+    gap: 20px;
+    max-width: 700px;
+  }
+}
+.air-mag__info-item::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 32px;
+  margin-bottom: 5px;
+  background: url("../../icons/double.checkbox.svg");
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+}

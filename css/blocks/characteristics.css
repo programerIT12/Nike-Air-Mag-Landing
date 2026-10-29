@@ -1,0 +1,151 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.characteristics__video {
+  position: relative;
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (width > 576px) {
+  .characteristics__video {
+    margin-bottom: 60px;
+  }
+}
+@media (width <= 576px) {
+  .characteristics__video {
+    margin-bottom: 40px;
+  }
+}
+.characteristics__video-prev-img {
+  height: 100%;
+
+  display: block;
+}
+.characteristics__video-play-link {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: var(--overlay-color);
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-shadow:
+    var(--shadows--glow),
+    inset var(--shadows--glow);
+  box-shadow:
+    var(--shadows--glow),
+    inset var(--shadows--glow);
+  -webkit-transition:
+    border-color var(--transition--time),
+    -webkit-box-shadow var(--transition--time);
+  transition:
+    border-color var(--transition--time),
+    -webkit-box-shadow var(--transition--time);
+  -o-transition:
+    border-color var(--transition--time),
+    box-shadow var(--transition--time);
+  transition:
+    border-color var(--transition--time),
+    box-shadow var(--transition--time);
+  transition:
+    border-color var(--transition--time),
+    box-shadow var(--transition--time),
+    -webkit-box-shadow var(--transition--time);
+  cursor: pointer;
+}
+@media (any-hover: hover) {
+  .characteristics__video-play-link:hover {
+    border-color: var(--accent-color);
+    -webkit-box-shadow:
+      var(--shadows--accent--glow),
+      inset var(--shadows--accent--glow);
+    box-shadow:
+      var(--shadows--accent--glow),
+      inset var(--shadows--accent--glow);
+  }
+}
+
+@media (width > 576px) {
+  .characteristics__video-play-link {
+    width: 80px;
+    height: 80px;
+  }
+  .characteristics__video-play-icon {
+    height: 24px;
+    width: 17px;
+    -webkit-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+@media (width <= 576px) {
+  .characteristics__video-play-link {
+    width: 48px;
+    height: 48px;
+  }
+  .characteristics__video-play-icon {
+    height: 13px;
+    width: 10px;
+    -webkit-transform: translateX(1px);
+    -ms-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+}
+.characteristics__card-title {
+  text-transform: uppercase;
+}
+
+.characteristics__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+  gap: 40px 20px;
+}
+.characteristics__card-icon {
+  margin-bottom: 4px;
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+@media (width > 576px) {
+  .characteristics__card-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (width <= 576px) {
+  .characteristics__card-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.characteristics__card-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--main-color);
+}
+.characteristics__card-title {
+  margin-bottom: 20px;
+}
